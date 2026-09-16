@@ -10,16 +10,16 @@ body.menu-open { overflow: hidden; }
 :root {
   --bg: #000000;
   --text: #ffffff;
-  --muted: #8e8e8e;
-  --nav-text: #2e2e2e;
+  --muted: #c7c7c7;
+  --nav-text: #161616;
   --pill-dark: #28282a;
   --sign-in-text: #c8c8c8;
   --nav-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
   --trust-bg: #28282a;
   --trust-border: rgba(255, 255, 255, 0.4);
-  --trust-text: #c4c2c3;
-  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
-  --font-display: "BubbledotICG-FinePos", "Geist Pixel Circle", monospace;
+  --trust-text: #e0e0e0;
+  --font-sans: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
 }
 
 /* ─── Local display fallback ─── */
@@ -144,7 +144,7 @@ body.menu-open { overflow: hidden; }
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--nav-text);
-  opacity: 0.5;
+  opacity: 0.78;
   transition: opacity 0.22s ease;
 }
 .nav-link:hover { opacity: 0.75; }
