@@ -8,8 +8,8 @@
   --color-pill:      #28282a;
   --color-pill-hi:   #323234;
   --color-line:      rgba(255, 255, 255, 0.08);
-  --color-muted:     #8e8e8e;
-  --color-dim:       #c4c2c3;
+  --color-muted:     #c7c7c7;
+  --color-dim:       #e0e0e0;
 
   --color-safe:       #10b981;
   --color-low:        #38bdf8;
@@ -17,7 +17,7 @@
   --color-high:       #fb923c;
   --color-critical:   #ef4444;
 
-  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-sans: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
 }
 
 @layer base {
@@ -32,3 +32,21 @@
 }
 
 @utility tabular { font-variant-numeric: tabular-nums; }
+
+:root {
+  --font-sans: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+}
+
+body,
+body :where(h1, h2, h3, h4, h5, h6, p, a, button, input, textarea, select, label, span, td, th, code) {
+  font-family: var(--font-sans) !important;
+}
+
+body :where(.fa-solid, .fa-regular, .fa-brands) {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+body :where(.fa-brands) {
+  font-family: "Font Awesome 6 Brands" !important;
+}
